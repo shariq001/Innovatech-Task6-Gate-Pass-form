@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Pass Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/343741ebda.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col items-center gap-[50px] py-[20px] bg-gray-200">
+    <div class="bg-white p-[20px] flex flex-col gap-[20px] rounded-[5px] shadow-md shadow-gray-400 w-[800px] items-center">
+        <h1 class="font-semibold text-[24px]">Gate Pass Form</h1>
+        <form action="" class="flex justify-center flex-wrap gap-[30px] items-center">
+            <div class="w-[300px]">
+                <label for="ID">ID</label><br>
+                <input type="number" placeholder="Enter ID" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Firm Name">Firm Name</label><br>
+                <input type="text" placeholder="Enter Firm Name" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Receiver Name">Receiver Name</label><br>
+                <input type="text" placeholder="Enter Receiver Name" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Date / Time">Date / Time</label><br>
+                <input type="date" placeholder="Enter Date" class="border-gray-400 border-[1px] px-[5px] w-[145px] h-[35px] mt-[5px] rounded-[5px]" >
+                <input type="time" placeholder="Enter Time" class="border-gray-400 border-[1px] px-[5px] w-[145px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Item Name">Item Name</label><br>
+                <select name="Item Name" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]">
+                    <option value="Item Name" selected disabled>Item Name</option>
+                    <option value="Item Name 1">Item Name 1</option>
+                    <option value="Item Name 2">Item Name 2</option>
+                    <option value="Item Name 3">Item Name 3</option>
+                </select>
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Lot#">Lot#</label><br>
+                <input type="number" placeholder="Enter Lot#" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Quantity">Quantity</label><br>
+                <input type="number" placeholder="Enter Quantity" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Vehicle No">Vehicle No</label><br>
+                <input type="tel" placeholder="Enter Vehicle No" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Remarks">Remarks</label><br>
+                <textarea name="remarks" id="remarks" placeholder="Enter Remarks" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]"></textarea>
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Checked By">Checked By</label><br>
+                <select name="Checked By" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]">
+                    <option value="Checked By" selected disabled>Checked By</option>
+                    <option value="Checked By 1">Checked By 1</option>
+                    <option value="Checked By 2">Checked By 2</option>
+                    <option value="Checked By 3">Checked By 3</option>
+                </select>
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Ref / Delivery Order No">Ref / Delivery Order No</label><br>
+                <input type="number" placeholder="Enter Ref / Delivery Order No" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+            </div>
+
+            <div class="w-[300px]">
+                <label for="Submit">Submit</label><br>
+                <button type="submit" class="bg-blue-500 px-[15px] py-[10px] w-[300px] h-[35px] mt-[5px] rounded-[5px] font-semibold text-white"><i class="fa-solid fa-floppy-disk mr-[5px]"></i> Save</button>
+            </div>
+        </form>
+
+        
+    </div>
+
+    <div class="overflow-x-auto w-[1300px]">
+        <table class="min-w-full w-full rounded-md">
+            <thead>
+                <tr class="bg-white rounded-md">
+                    <th id="ID" class="px-4 py-2 border-b">ID</th>
+                    <th id="Firm Name" class="px-4 py-2 border-b">Firm Name</th>
+                    <th id="ReceiverName" class="px-4 py-2 border-b">Receiver Name</th>
+                    <th id="Date" class="px-4 py-2 border-b">Date</th>
+                    <th id="Time" class="px-4 py-2 border-b">Time</th>
+                    <th id="ItemName" class="px-4 py-2 border-b">Item Name</th>
+                    <th id="Lot#" class="px-4 py-2 border-b">Lot#</th>
+                    <th id="Quantity" class="px-4 py-2 border-b">Quantity</th>
+                    <th id="VehicleNo" class="px-4 py-2 border-b">Vehicle No</th>
+                    <th id="Remarks" class="px-4 py-2 border-b">Remarks</th>
+                    <th id="CheckedBy" class="px-4 py-2 border-b">Checked By</th>
+                    <th id="Actions" class="px-4 py-2 border-b">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600">
+                <tr id="table1">
+                    <td  class="px-4 py-2 border-b text-center">
+                        <div class="border border-black rounded-md px-2 w-[100px] h-[40px] bg-white"></div>
+                    </td>
+                    <td  class="px-4 py-2 border-b">
+                        <div class="border border-black rounded-md px-2 w-[250px] h-[40px] bg-white"></div>
+
+                    </td>
+                    <td  class="px-4 py-2 border-b text-center">
+                        <div class="border border-black rounded-md px-2 w-[250px] h-[40px] bg-white"></div>
+                    </td>
+                    <td class="px-4 py-2 border-b">
+                        <div class="border border-black rounded-md px-2 w-[120px] h-[40px] bg-white"></div>
+
+                    </td>
+                    <td  class="px-4 py-2 border-b text-center">
+                        <div class="border border-black rounded-md px-2 w-[120px] h-[40px] bg-white"></div>
+                    </td>
+                    <td  class="px-4 py-2 border-b text-center">
+                        <div class="border border-black rounded-md px-2 w-[250px] h-[40px] bg-white"></div>
+                    </td>
+                    <td  class="px-4 py-2 border-b text-center">
+                        <div class="border border-black rounded-md px-2 w-[120px] h-[40px] bg-white"></div>
+                    </td>
+                    <td  class="px-4 py-2 border-b text-center">
+                        <div class="border border-black rounded-md px-2 w-[120px] h-[40px] bg-white"></div>
+                    </td>
+                    <td  class="px-4 py-2 border-b text-center">
+                        <div class="border border-black rounded-md px-2 w-[120px] h-[40px] bg-white"></div>
+                    </td>
+                    <td class="px-4 py-2 border-b text-center text-black">
+                        <div class="border border-black rounded-md px-2 w-[250px] h-[40px] bg-white"></div>
+                    </td>
+                    <td  class="px-4 py-2 border-b text-center text-black">
+                        <div class="border border-black rounded-md px-2 w-[250px] h-[40px] bg-white"></div>
+                    </td>
+                    <td class="flex justify-center items-center gap-[10px] px-4 py-2 border-b text-center text-black">
+                        <button class="bg-blue-400 text-white px-[5px] "><i class="fa-solid fa-eye"></i></button>
+                        <button class="bg-blue-600 text-white px-[5px] "><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="deletTable()" class="bg-red-600 text-white px-[5px] "><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
