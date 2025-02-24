@@ -11,6 +11,9 @@
 </head>
 <body class="flex flex-col items-center gap-[50px] py-[20px] bg-gray-200">
     <div class="bg-white p-[20px] flex flex-col gap-[20px] rounded-[5px] shadow-md shadow-gray-400 w-[800px] items-center">
+        <div class="flex justify-between w-full items-center ">
+            <button type="button" class="bg-gray-500 py-[8px] px-[15px] rounded-[5px] text-white"><a href="/index.html"><i class="fa-solid fa-arrow-left mr-[5px]"></i>Back to Dashboard</a></button>
+        </div>
         <h1 class="font-semibold text-[24px]">Gate Pass Form</h1>
         <form action="" class="flex justify-center flex-wrap gap-[30px] items-center">
             <div class="w-[300px]">
@@ -20,7 +23,15 @@
 
             <div class="w-[300px]">
                 <label for="Firm Name">Firm Name</label><br>
-                <input type="text" placeholder="Enter Firm Name" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+                <div class="flex justify-start items-center mt-[5px]">
+                    <select name="" id="Firm Name" class="border-gray-400 border-[1px] w-[280px] h-[35px] rounded-[5px]">
+                        <option value="Select an option" disabled selected>Select an Option</option>
+                        <option value="Firm Name 1">Firm Name 1 </option>
+                        <option value="Firm Name 2">Firm Name 2 </option>
+                        <option value="Firm Name 3">Firm Name 1 </option>
+                    </select>
+                    <button class="bg-green-700 font-bold text-white px-[8px] h-[35px] text-[24px] flex justify-center items-center" onclick="openDialog()">+</button>
+                </div>
             </div>
 
             <div class="w-[300px]">
@@ -46,7 +57,12 @@
 
             <div class="w-[300px]">
                 <label for="Lot#">Lot#</label><br>
-                <input type="number" placeholder="Enter Lot#" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]" >
+                <select name="Lot#" class="border-gray-400 border-[1px] px-[5px] w-[300px] h-[35px] mt-[5px] rounded-[5px]">
+                    <option value="Lot#" selected disabled>Lot#</option>
+                    <option value="Lot# 1">Lot# 1</option>
+                    <option value="Lot# 2">Lot# 2</option>
+                    <option value="Lot# 3">Lot# 3</option>
+                </select>
             </div>
 
             <div class="w-[300px]">
@@ -84,6 +100,13 @@
                 <button type="submit" class="bg-blue-500 px-[15px] py-[10px] w-[300px] h-[35px] mt-[5px] rounded-[5px] font-semibold text-white"><i class="fa-solid fa-floppy-disk mr-[5px]"></i> Save</button>
             </div>
         </form>
+
+        <div class="flex justify-center items-center gap-[30px]">
+            <button type="button" class="bg-green-600 py-[8px] px-[15px] rounded-[5px] text-white"><a href=""><i class="fa-solid fa-print mr-[5px]"></i>Print</a></button>
+            <button type="button" class="bg-green-700 py-[8px] px-[15px] rounded-[5px] text-white"><a href="">WhatsApp</a></button>
+            <button type="button" class="bg-gray-600 py-[8px] px-[15px] rounded-[5px] text-white relative"><a href="">Email</a></button>
+            
+        </div>
 
         
     </div>

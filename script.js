@@ -11,8 +11,8 @@ function deletTable() {
 }
 
 function openDialog() {
-    let userInput = prompt("Add New Customer:");
+    let userInput = prompt("Add Firm Name:");
     if (userInput !== '') {
-        alert("Added Customer: " + userInput);
+        alert("Added Firm Name: " + userInput);
     }
 }
